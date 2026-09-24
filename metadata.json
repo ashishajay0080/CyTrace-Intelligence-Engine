@@ -1,0 +1,6 @@
+{
+  "name": "Jharkhand Cyber Cell OSINT & CDR Forensic Suite",
+  "description": "An on-premises CDR, Tower Dump, and OSINT link-analysis dashboard for Deoghar Police and Jharkhand Cyber Cell to facilitate rapid field investigation, spatial routing, and suspect correlation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

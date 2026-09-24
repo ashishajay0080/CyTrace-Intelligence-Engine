@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom scrollbar for high-density forensic UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Slate 900 */
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; /* Slate 700 */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; /* Slate 600 */
+}
+
+/* Tactical high-contrast paper-white inversion matrix for outdoor field operations */
+.investigation-mode {
+  filter: invert(1) hue-rotate(180deg) contrast(1.08) saturate(1.15);
+  background-color: #000000 !important; /* Force black, inverting to pure white */
+}
+
+#main-app {
+  transition: filter 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
